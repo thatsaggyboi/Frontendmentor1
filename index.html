@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+     <!-- Custome CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Frontend-mentor Challenge-1</title>
+  </head>
+  <body>
+
+    <div class="mb-overlay" id="isActive" onclick="closeNav()"></div>
+
+    <div class="mobile-nav" id="mb-nav">
+      <div class="hamburger" id="hamburger" onclick="toggleNav()">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+      <nav class="nav-items">
+        <ul class="nav-links">
+          <li class="nav-item"><a class="nav-link" href="">home</a></li>
+          <li class="nav-item"><a class="nav-link" href="">shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="">about</a></li>
+          <li class="nav-item"><a class="nav-link" href="">content</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    
+
+    <div class="room-container grid-container">
+        <div class="img-carousel-section">
+            <header class="header">
+              <a class="logo">
+                room
+              </a>
+              <nav class="nav-items">
+                <ul class="nav-links">
+                  <li class="nav-item"><a class="nav-link" href="">home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="">shop</a></li>
+                  <li class="nav-item"><a class="nav-link" href="">about</a></li>
+                  <li class="nav-item"><a class="nav-link" href="">content</a></li>
+                </ul>
+              </nav>
+            </header>
+            <div id="carouselExampleControls" class="carousel slide h-100" data-bs-ride="carousel">
+                <div class="carousel-inner h-100">
+                  <div class="carousel-item active hero-1 h-100">
+                    <img src="./img/mobile-image-hero-1.jpg" class="mb-hero">
+                  </div>
+                  <div class="carousel-item hero-2 h-100">
+                    <img src="./img/mobile-image-hero-2.jpg" class="mb-hero">
+                  </div>
+                  <div class="carousel-item hero-3 h-100">
+                    <img src="./img/mobile-image-hero-3.jpg" class="mb-hero">
+                  </div>
+                </div>     
+            </div>
+        </div>
+        <div class="content-carousel-section">
+          <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="hero">
+                  <h1 class="heading-1 hero__heading">
+                      Discover innovative ways to decorate
+                  </h1>
+                  <p class="para-text hero__para mb-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. tempora ipsum corrupti , ipsam animi nulla at. Quae aperiam aut ullam tempora ratione corporis placeat ut eius recusandae nesciunt quidem omnis voluptates impedit, cum labore optio fuga ab vero provident.
+                  </p>
+                  <a class="cta hero__cta">
+                    <span class="text">shop now</span>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="hero">
+                  <h1 class="heading-1 hero__heading">
+                    We are available all across the globe
+                  </h1>
+                  <p class="para-text hero__para mb-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. tempora ipsum corrupti , ipsam animi nulla at. Quae aperiam aut ullam tempora ratione corporis placeat ut eius recusandae nesciunt quidem omnis voluptates impedit, cum labore optio fuga ab vero provident.
+                  </p>
+                  <a class="cta hero__cta">
+                    <span class="text">shop now</span>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="hero">
+                  <h1 class="heading-1 hero__heading">
+                     Manufactured with the best materials
+                  </h1>
+                  <p class="para-text hero__para mb-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. tempora ipsum corrupti , ipsam animi nulla at. Quae aperiam aut ullam tempora ratione corporis placeat ut eius recusandae nesciunt quidem omnis voluptates impedit, cum labore optio fuga ab vero provident.
+                  </p>
+                  <a class="cta hero__cta">
+                    <span class="text">shop now</span>
+                  </a>
+                </div>
+              </div>
+            </div>     
+          </div>
+          <div class="arrow-section">
+            <button class="carousel-control-prev" onclick="slideCarousels(['carouselExampleControls', 'carouselExampleControls2'], 'prev')">
+              <img src="./img/icon-angle-left.svg" alt="">
+            </button>
+            <button class="carousel-control-next" onclick="slideCarousels(['carouselExampleControls', 'carouselExampleControls2'], 'next')">
+              <img src="./img/icon-angle-right.svg" alt="">
+            </button>
+          </div>
+         
+          
+        </div>
+        <div class="about-left-img">
+          <img src="./img/image-about-dark.jpg" class="mb-img">
+        </div>
+        <div class="about-section">
+            <div class="about">
+              <h2 class="heading-2 about__heading">
+                about our furniture
+              </h2>
+              <p class="para-text about__para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsam ab sunt dolorem dolores, ducimus est corporis explicabo, veritatis nihil similique quam harum porro. Atque delectus debitis aperiam dolores provident natus vero sint ut vel explicabo harum, incidunt veniam, quibusdam, sunt nemo voluptates esse quaerat rem id.
+              </p>
+            </div>
+        </div>
+        <div class="about-right-img">
+          <img src="./img/image-about-light.jpg" class="mb-img">
+        </div>
+    </div>
+    
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+    <script type="text/javascript"> 
+      function slideCarousels(ids, action) {
+        var len = ids.length;
+        var id = null;
+      
+        for (var i = 0; i < len; i++) {
+            id = ids[i];
+            $('#' + id).carousel({ slide: action });
+        }
+      }
+
+            $(document).ready(function(){
+        $(".hamburger").click(function(){
+          $(this).toggleClass("is-active");
+        });
+      });
+
+      function toggleNav() {
+      var element = document.getElementById("mb-nav");
+      var element1 = document.getElementById("isActive");
+      element.classList.toggle("active");
+      element1.classList.toggle("active");
+      }
+
+      function closeNav() {
+        var element = document.getElementById("mb-nav");
+        var element1 = document.getElementById("isActive");
+        var element2 = document.getElementById("hamburger");
+        element.classList.remove("active");
+        element1.classList.remove("active");
+        element2.classList.remove("is-active");
+      }
+
+      </script>
+  </body>
+</html>
